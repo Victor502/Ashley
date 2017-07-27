@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/*************************** body ****************************/
+
+.ashley_logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.25em;
+    text-align: center;
+    color: #b000b5;
+    line-height: .5;
+}
+
+.ashley_logo h1 {
+    margin-right: 30%;
+}
+
+.ashley_logo h2 {
+    margin-left: 30%;
+}
+
+.home_pic {
+    max-width: 100%;
+}
+
+.intro {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+
+/*************************** Products ****************************/
+
+#product_gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    flex: 2 200px;
+    border: solid 2.5px #b000b5;
+    max-width: 45%;
+    margin: 5px;
+}
+
+.product img {
+    width: 100%
+}
+
+.add_img img{
+    max-width: 25%;
+}
+
+.product p {
+    font-size: .85rem;
+    line-height: .5;
+    text-align: center;
+}
+
+.paypal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+}
+
+
+/*************************** Nav ****************************/
+
+nav {
+    margin: 25px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li a {
+    display: block;
+    text-decoration: none;
+    color: #b000b5;
+}
+
+nav li a:hover {
+    background-color: pink;
+}
+
+nav ul {
+    display: flex;
+    margin: auto;
+}
+
+nav li {
+    margin: auto;
+    border: 2.5px #b000b5 solid;
+    border-radius: 10px;
+    width: 90px;
+    height: auto;
+    text-align: center;
+}
+
+
+/*************************** footer ****************************/
+
+#overlay {
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    text-align: center;
+}
+
+#overlay img {
+    margin-top: 10%;
+    width: 400px;
+    height: 400px;
+}
+
+#overlay p {
+    color: white;
+}
+
+
+
+/*************************** Media Query ****************************/
+
+
+@media (min-width: 800px) {
+    .product {
+        flex: 1 200px;
+        margin: 10px;
+    }
+    #product_gallery {
+        margin: 10px;
+    }
+}
