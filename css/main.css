@@ -31,6 +31,28 @@
 }
 
 
+/************************* Main Page **************************/
+
+.main_page {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    text-align: center
+}
+
+.main_page figure {
+    align-self: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.25rem;
+}
+
+.main_page img {
+    width: 100px;
+}
+
+
 /*************************** Products ****************************/
 
 #product_gallery {
@@ -51,7 +73,7 @@
     width: 100%
 }
 
-.add_img img{
+.add_img img {
     max-width: 25%;
 }
 
@@ -128,9 +150,7 @@ nav li {
 }
 
 
-
 /*************************** Media Query ****************************/
-
 
 @media (min-width: 800px) {
     .product {
