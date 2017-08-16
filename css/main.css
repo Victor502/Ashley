@@ -9,20 +9,14 @@
     font-family: 'Dancing Script', cursive;
     font-size: 2.25em;
     text-align: center;
-    color: #b000b5;
-    line-height: .5;
-}
-
-.ashley_logo h1 {
-    margin-right: 30%;
-}
-
-.ashley_logo h2 {
-    margin-left: 30%;
+    color: #ff11b7;
+    max-width: 90%;
+    margin: auto;
 }
 
 .home_pic {
     max-width: 100%;
+    margin: auto;
 }
 
 .intro {
@@ -34,6 +28,7 @@
 /************************* Main Page **************************/
 
 .main_page {
+    color: #ff11b7;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -46,6 +41,10 @@
     align-self: center;
     font-family: 'Dancing Script', cursive;
     font-size: 1.25rem;
+}
+
+.main_page figure:hover {
+    transform: scale(1.5);
 }
 
 .main_page img {
@@ -64,7 +63,7 @@
 
 .product {
     flex: 2 200px;
-    border: solid 2.5px #b000b5;
+    border: solid 2.5px #ff11b7;
     max-width: 45%;
     margin: 5px;
 }
@@ -75,11 +74,15 @@
 
 .add_img img {
     max-width: 25%;
+    border: solid 2.5px #ff11b7;
+    margin: 1px;
 }
 
 .product p {
+    color: #ff11b7;
+    font-family: 'Montserrat', sans-serif;
     font-size: .85rem;
-    line-height: .5;
+    line-height: .70;
     text-align: center;
 }
 
@@ -89,44 +92,69 @@
     justify-content: center
 }
 
+/*************************** Muli Page ***********************/
+
+.multi_page img {
+    width: 75%;
+    margin-bottom: 25px;
+}
 
 /*************************** Nav ****************************/
 
 nav {
-    margin: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ff11b7; 
+    height: 130px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 nav ul {
     list-style-type: none;
-    padding: 0;
+    padding: 5px;
+    margin: auto
 }
 
 nav li a {
     display: block;
     text-decoration: none;
-    color: #b000b5;
+    color: white;
+    padding: 5px;
+    margin: 0 2px
 }
 
 nav li a:hover {
-    background-color: pink;
+    background-color: white;
+    color: #ff11b7;
+    border-radius: 25px;
 }
 
 nav ul {
     display: flex;
+    flex-direction: row;
     margin: auto;
 }
 
 nav li {
+    width: 100px;
     margin: auto;
-    border: 2.5px #b000b5 solid;
-    border-radius: 10px;
-    width: 90px;
-    height: auto;
+    justify-content: center;
     text-align: center;
 }
 
 
-/*************************** footer ****************************/
+/******************** Item Sold out page **********************/
+
+.soldout {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    font-family: 'Dancing Script', cursive;
+    padding-top: 50px;
+}
+
+
+/*************************** OverLay ****************************/
 
 #overlay {
     background: rgba(0, 0, 0, 0.7);
@@ -146,6 +174,37 @@ nav li {
 }
 
 #overlay p {
+    color: white;
+}
+/************************* Page numbers *************************/
+.pageNumber {
+    color: #ff11b7; 
+    font-size: 1.25rem;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: auto;
+}
+
+.pageNumber a {
+    color: #ff11b7;
+    margin: 0 10px;
+}
+
+/*************************** footer ****************************/
+
+footer {
+    display: flex;
+    margin: 15px auto auto;
+    justify-content: center;
+    background-color: #ff11b7;
+    height: 50px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer a {
+    text-decoration: none;
     color: white;
 }
 
