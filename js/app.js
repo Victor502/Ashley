@@ -1,3 +1,24 @@
+$(document).ready(function(){
+    $(".sticky").sticky({topSpacing:0});
+  });
+
+$('.sticky').sticky({
+  getWidthFrom: '',
+  responsiveWidth: true
+});
+
+$('.description').sticky({
+  getWidthFrom: '',
+  responsiveWidth: true
+});
+
+$('.description').sticky({
+  topSpacing: 50,
+  getWidthFrom: '.container',
+  responsiveWidth: true
+});
+
+
 //Problem: User when clicking on image goes to a dead end
 //Solution: Create an overlay with the large image - Lightbox
 
