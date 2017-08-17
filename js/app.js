@@ -1,3 +1,5 @@
+//Sticky header
+
 $(document).ready(function(){
     $(".sticky").sticky({topSpacing:0});
   });
@@ -62,4 +64,10 @@ $overlay.click(function (){
     
 });
 
+
+(function($){
+  $.ScrollUpToTop({
+    "speedUp":1500
+  });
+})(jQuery);
 
