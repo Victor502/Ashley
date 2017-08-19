@@ -14,7 +14,7 @@
 }
 
 .home_pic {
-    max-width: 100%;
+    width: 100%;
     margin: auto;
 }
 
@@ -64,11 +64,11 @@
     flex: 2 200px;
     border: solid 2.5px #ff11b7;
     max-width: 45%;
-    margin: 5px;
+    margin: 10px;
 }
 
 .product:hover {
-    border: solid 10px pink;
+    border: solid 5px pink;
 }
 
 .product img {
@@ -92,14 +92,14 @@
 .paypal {
     display: flex;
     flex-direction: row;
-    justify-content: center
+    justify-content: center;
 }
 
 
 /*************************** Muli Page ***********************/
 
 .multi_page img {
-    width: 75%;
+    width: 70%;
     margin-bottom: 25px;
 }
 
@@ -243,6 +243,8 @@ footer a {
 .description {
     padding-bottom: 25px;
 }
+
+
 /*************************** scroll up ****************************/
 
 #ScrollUpToTop {
@@ -275,5 +277,9 @@ footer a {
     }
     #product_gallery {
         margin: 10px;
+    }
+    /*************************** multi page ****************************/
+    .multi_page img {
+        max-width: 50%;
     }
 }
