@@ -116,7 +116,7 @@ nav {
 
 nav ul {
     list-style-type: none;
-    padding: 5px;
+    padding: 5px 0;
     margin: auto
 }
 
@@ -267,6 +267,20 @@ footer a {
     background: rgba(0, 0, 0, 0.7);
 }
 
+
+/******************* contact page ***********************/
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+.contact-form button{
+    
+}
 
 /*************************** Media Query ****************************/
 

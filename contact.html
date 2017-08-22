@@ -1,32 +1,55 @@
 <!DOCTYPE html>
 <html>
-    <head>
+
+<head>
     <meta charset="utf-8">
-    <title>AshleysCloset.store</title>
+    <title>Contact page</title>
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Playfair+Display" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <meta name="viewport" content="width=device-width, inital-scale=1">
 </head>
+
 <body>
     <nav class="sticky">
         <ul>
             <li><a href="tops.html">Tops</a></li>
             <li><a href="dressesandskirts.html">Dresses &amp; Skirts</a></li>
             <li><a href="bottoms.html">Bottoms</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html">Shop all</a></li>
         </ul>
     </nav>
     <div class="ashley_logo">
-        <h1 class="description">Ashley's Closet</h1>
+        <h1 class="description">Contact</h1>
     </div>
-    <div>
-        <img src="img/IMG_24701.jpg" class="home_pic">
+    <div class="intro">
+        <p>If you have a problem with your order or questions about any of the clothing, please send me an email. I will get back to you as soon as possible. Thank you for your business and I look forward to helping you.</p>
     </div>
-    <!-- <div class="intro">
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-    </div>-->
+    <div class="contact-form">
+        <form method="POST" name="contactform" action="contact-form-handler.php">
+            <p>
+                <label for="name">Your Name:</label> <br>
+                <input type="text" name="name">
+            </p>
+            <p>
+                <label for="email">Email Address:</label> <br>
+                <input type="text" name="email"> <br>
+            </p>
+            <p>
+                <label for="message">Message:</label> <br>
+                <textarea name="message" rows="8" cols="20"></textarea>
+            </p>
+            <input type="submit" value="Submit"><br>
+        </form>
+    </div>
+    <script language="JavaScript">
+        // Code for validating the form
+        var frmvalidator = new Validator("contactform");
+        frmvalidator.addValidation("name", "req", "Please provide your name");
+        frmvalidator.addValidation("email", "req", "Please provide your email");
+        frmvalidator.addValidation("email", "email", "Please enter a valid email address");
+    </script>
     <div class="main_page">
         <h2>Choose a category</h2>
     </div>
@@ -73,6 +96,8 @@
     </footer>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/sticky/jquery.sticky.js"></script>
+    <script src="js/gen_validatorv31.js"></script>
     <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
-</body>  
+</body>
+
 </html>
