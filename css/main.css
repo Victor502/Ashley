@@ -278,6 +278,13 @@ footer a {
     text-align: center;
 }
 
+.contact-form input{
+    border: 2px solid pink;
+}
+
+.contact-form textarea{
+    border: 2px solid pink;
+}
 
 /*************************** Media Query ****************************/
 
